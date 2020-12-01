@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;0,900;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+</head>
+<body>
+  <header id="cabecalho">
+    <div id="banner">
+      <h1 id="titulo">Lições Aprendidas - Trybe</h1>
+      <img id="minha_foto" src="https://avatars1.githubusercontent.com/u/66654653?s=460&u=c99615034de62600eda9617441035c26fe045751&v=4" alt="Foto do Marcus">
+      <nav id="menu">
+        <a href="index.html">Home</a>
+        <a href="https://github.com/marcusWittho" target="_blank">GitHub</a>
+      </nav>
+    </div>
+  </header>
+  <section id="licoes">
+    <div id="headerLessons">
+      <h2 id="titulo-aprendidas">Lições aprendidas</h2>
+      <h2 id="titulo-aprender">Lições a aprender</h2>
+    </div>
+    <ol id="licoes_aprendidas">
+      <li>Unix & Bash</li>
+      <li>Internet</li>
+      <li>Git</li>
+      <li>GitHub</li>
+      <li>Estrutura de páginas HTML & CSS</li>
+      <li>Seletore e posicionamento</li>
+      <li>HTML semântico</li>
+      <li>Zoom</li>
+      <li>Slack</li>
+      <li>inteligência emocional</li>
+    </ol>
+    <ul id="licoes_a_aprender">
+      <li>CSS responsivos</li>
+      <li>JavaScript</li>
+      <li>Forms</li>
+      <li>React</li>
+      <li>Testes automatizados</li>
+      <li>Node</li>
+      <li>SQL</li>
+      <li>Mongo</li>
+      <li>Express</li>
+      <li>Algoritmos e estrutura de dados</li>
+    </ul>
+  </section>
+  <section id="example">
+    <h2>Exemplos</h2>
+    <p>
+      Estes são alguns exercícios desenvolvidos durante as aulas para fixar o aprendizado, os cálculos não refletem a realidade.
+    </p>
+    <p id="xadrez">Ao escolher uma das peças do xadrez, o programa retorna seus movimentos válidos</p>
+    <div id="ex_6">
+      <h2 class="configFont">Movimentação das Peças</h2>
+      <label for="cboPieces" class="configFont">Escolha uma peça: </label>
+      <select id="cboPieces" onchange="updatePiece()">
+        <option value="" disabled selected>Peças</option>
+        <option value="Peões">Peões</option>
+        <option value="Torres">Torres</option>
+        <option value="Bispos">Bispos</option>
+        <option value="Cavalos">Cavalos</option>
+        <option value="Rainha">Rainha</option>
+        <option value="Rei">Rei</option>
+      </select>
+      <p class="configFont" id="infoText">Movimentos válidos para a peça selecionada: </p>
+      <p id="outText" class="configFont"></p>
+    </div>
+    <p id="inss_ir">Os valores devem ser informados utilizando a notação como no exemplo: 1000.00</p>
+    <div id="ex_11">
+      <h2 class="configFont">Dedução de INSS e IR</h2>
+      <p>
+        <label for="inSalary">Digite o salário bruto: </label>
+        <input type="text" id="inSalary" class="aplyMargin">
+      </p>
+      <input type="button" value="Calcular" id="btnCalcNetSalary" class="aplyMargin">
+      <input type="button" value="Limpar" id="btnCleanSalary" class="aplyMargin">
+      <p id="outNetSalary"></p>
+    </div>
+    <p id="custo">Os valores em Reais, devem ser informados utilizando a notação como no exemplo: 1000.00</p>
+    <div id="ex_10">
+      <h2>Cálculo do Custo</h2>
+      <h3>Informações do produto</h3>
+      <p>
+        <label for="inCost">Insira o custo em R$: </label>
+        <input type="text" id="inCost" class="aplyMargin" >
+      </p>
+      <p>
+        <label for="inSalePrice">Insira o preço de venda em R$: </label>
+        <input type="text" id="inSalePrice" class="aplyMargin" >
+      </p>
+      <p>
+        <label for="inSoldAmount">Insira a quantidade vendida: </label>
+        <input type="text" id="inSoldAmount" class="aplyMargin">
+      </p>
+      <input type="button" value="Calcular" id="btnCalc" class="aplyMargin">
+      <input type="button" value="Limpar" id="btnClean" class="aplyMargin">
+      <p id="outProfit"></p>
+    </div>
+  </section>
+  <section id="stories">
+    <table>
+      <tr>
+        <td>
+          <article class="lado-esquerdo">
+            Deixarei aqui um breve resumo sobre meu começo na Trybe. Depois de muito tempo, resolvi finalmente mudar de carreira e partir para uma área que gosto muito, e para minha alegria pude estudar aqui na Trybe,  que além de capacitar tecnicamente seus estudantes, os ajuda a desenvolver habilidades sócio comportamentais, e isso fez ficar ainda mais animado com o método de ensino que eles praticam.
+          </article>
+        </td>
+        <td>
+          <aside class="lado-direito">
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+          </aside>
+        </td>
+      </tr>
+    </table>
+  </section>
+</body>
+<footer id="rodape">
+  <p>
+    Todos os direitos reservados.
+  </p>
+  <a href="http://github.com/marcusWittho" target="_blank"> Marcus Lima Witthoeft</a>
+</footer>
+<script src="/script.js"></script>
+</html>

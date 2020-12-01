@@ -1,0 +1,282 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+:root {
+
+  --primary-color: rgb(156 , 255 , 255);
+
+  --secondary-color: rgb(90 , 156 , 255);
+}
+
+body {
+  width: 1366px;
+  letter-spacing: 1px;
+  background-color: rgb(253 , 251 , 251);
+  margin: 0 auto;
+  box-shadow: 0 0 20px 7px rgba(135 , 135 , 135 , 0.1);
+  text-align: center;
+}
+
+/* == header == */
+#cabecalho {
+  position: fixed;
+  display: block;
+}
+
+#banner {
+  display: inline-block;
+  background-color: var(--primary-color);
+  border-radius: 0 0 30px 30px;
+  width: 1366px;
+  height: 180px;
+  position: relative;
+}
+
+#titulo {
+  font-style: italic;
+  font-size: 3em;
+  font-family: Roboto, sans-serif;
+  color: rgb(30 , 72 , 82);
+  position: absolute;
+  left: 30%;
+  top: 30%;
+}
+
+#minha_foto {
+  width: 200px;
+  border-radius: 50%;
+  border: var(--primary-color) solid 5px;
+  position: absolute;
+  top: 1em;
+  right: 5em;
+}
+
+#menu {
+  width: 200px;
+  display: inline-block;
+  margin-top: 9.7em;
+  border-top: navy 2px solid;
+  text-align: center;
+}
+
+#menu a {
+  font-size: 16px;
+}
+
+#menu a + a {
+  margin-left: 20px;
+}
+
+#menu a:hover {
+  font-weight: 700;
+  font-size: 25px;
+  transition: 300ms ease-in-out;
+}
+
+/* == Section lições == */
+ol , ul , h3 {
+  display: inline-block;
+  line-height: 28px;
+}
+
+li {
+  border-bottom: black solid 1px;
+}
+
+#titulo-aprendidas {
+  display: inline-block;
+  margin-right: 130px;
+  margin-bottom: 20px;
+}
+
+#titulo-aprender {
+  display: inline-block;
+  margin-left: 20px;
+}
+
+#licoes ol + ul {
+  margin-left: 100px;
+}
+
+#licoes {
+  padding-top: 210px;
+  text-align: center;
+}
+
+/* == Exemplos == */
+#example {
+  display: inline-block;
+  margin-top: 50px;
+  text-align: center;
+}
+
+input {
+  border-radius: 9px;
+  height: 23px;
+}
+
+#ex_6 , #ex_10 , #ex_11 {
+  margin: 0 auto;
+}
+
+#xadrez , #inss_ir , #custo {
+  margin-top: 50px;
+}
+
+/* == Exercício 06 == */
+#ex_6 {
+  font-family: Arial, Helvetica, sans-serif;
+  width: 500px;
+  height: 269px;
+  padding: 15px;
+  margin-top: 10px;
+  background-color: var(--secondary-color);
+  border-radius: 30px;
+  box-shadow: 3px 3px 8px rgba(0 , 0 , 0 , 0.3);
+  text-align: center;
+  color: antiquewhite;
+  font-weight: 600;
+}
+
+#cboPieces {
+  margin-top: 25px;
+  width: 90px;
+  height: 25px;
+  border-radius: 20px;
+  border-style: none;
+  box-shadow: 1px 1px 4px rgba(0 , 0 , 0 , 0.4);
+}
+
+#infoText {
+  margin-top: 25px;
+}
+
+#outText {
+  width: 450px;
+  background-color: rgb(111 , 174 , 255);
+  border-radius: 30px;
+  border: solid 2px antiquewhite;
+  padding: 10px;
+  margin: 20px auto;
+}
+
+/* == Exercício 11 == */
+#ex_11 {
+  font-family: Arial, Helvetica, sans-serif;
+  width: 500px;
+  height: 269px;
+  padding: 15px;
+  margin-top: 10px;
+  background-color: var(--secondary-color);
+  border-radius: 30px;
+  box-shadow: 3px 3px 8px rgba(0 , 0 , 0 , 0.3);
+  text-align: center;
+  color: antiquewhite;
+  font-weight: 600;
+}
+
+#inSalary {
+  margin-top: 30px;
+}
+
+#btnCalcNetSalary , #btnCleanSalary {
+  width: 90px;
+  height: 30px;
+  margin-top: 20px;
+  box-shadow: 1px 1px 6px rgba(0 , 0 , 0 , 0.1);
+  border-radius: 20px;
+}
+
+#outNetSalary {
+  width: 450px;
+  background-color: rgb(111 , 174 , 255);
+  border-radius: 30px;
+  border: solid 2px antiquewhite;
+  padding: 10px;
+  margin: 20px auto;
+}
+
+/* == Exercício 10 == */
+#ex_10 {
+  width: 500px;
+  height: 330px;
+  padding: 15px;
+  margin-top: 10px;
+  background-color: var(--secondary-color);
+  border-radius: 30px;
+  box-shadow: 3px 3px 8px rgba(0 , 0 , 0 , 0.3);
+  text-align: center;
+  color: antiquewhite;
+  font-weight: 600;
+}
+
+#ex_10 h3 {
+  margin: 20px 0 10px;
+}
+
+.aplyMargin {
+  margin-bottom: 10px;
+}
+
+#btnCalc , #btnClean {
+  width: 90px;
+  height: 30px;
+  margin-top: 10px;
+  box-shadow: 1px 1px 6px rgba(0 , 0 , 0 , 0.1);
+  border-radius: 20px;
+}
+
+#outProfit {
+  width: 450px;
+  background-color: rgb(111 , 174 , 255);
+  border: solid 2px antiquewhite;
+  border-radius: 20px;
+  padding: 10px;
+  margin: 10px auto;
+}
+
+/* == Article e aside == */
+td {
+  display: inline-block;
+  margin-left: 120px;
+}
+
+article , aside {
+  width: 500px;
+}
+
+#stories {
+  margin-top: 50px;
+}
+
+.lado-direito , .lado-esquerdo {
+  border: var(--primary-color) solid 2px;
+  box-shadow: 4px 4px var(--primary-color);
+  border-radius: 20px;
+}
+
+.lado-direito {
+  padding: 30px 20px 45px;
+  justify-content: center;
+}
+
+.lado-esquerdo {
+  padding: 20px;
+}
+
+/* == Footer == */
+footer {
+  width: 1366px;
+  height: 50px;
+  font-size: 15px;
+  background-color: var(--primary-color);
+  border-radius: 30px 30px 0 0;
+  padding: 10px;
+  margin-top: 50px;
+  bottom: 0;
+  text-align: center;
+}
